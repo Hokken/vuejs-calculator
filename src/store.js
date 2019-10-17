@@ -6,5 +6,11 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {},
   mutations: {},
-  actions: {}
+  actions: {
+    btnClick(context, data) {
+      context.commit();
+      // eslint-disable-next-line no-console
+      console.log(data);
+    }
+  }
 });
